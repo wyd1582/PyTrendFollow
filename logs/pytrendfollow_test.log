@@ -1,0 +1,1 @@
+2021-08-28 17:24:19,894 - data_feed - WARNING - Something went wrong on symbol HKEX_HSI request from storage: cannot set WRITEABLE flag to True of this array

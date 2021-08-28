@@ -14,7 +14,9 @@ try:
 except ImportError:
     print("You need to set up the settings file at config/settings.py.")
     sys.exit()
-    
+
+sys.path.append('../Users/yudiwang/Desktop/playground/PyTrendFollow')
+#print(os.path.dirname(__file__))
 from core.instrument import Instrument
 from core.utility import draw_sample, sharpe
 from trading.accountcurve import accountCurve

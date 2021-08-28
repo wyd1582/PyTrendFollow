@@ -1,11 +1,14 @@
 import logging
 import os
-from config.settings import file_logger, console_logger
+import sys
 
+from config.settings import file_logger, console_logger
+sys.path.append('../Users/yudiwang/Desktop/playground/PyTrendFollow')
 logging.basicConfig()
 
 if file_logger['enabled']:
     log_dir = os.path.dirname(file_logger['file_name'])
+    print(log_dir)
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
